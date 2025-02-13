@@ -501,3 +501,93 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+.photo-container {
+    width: 800px; /* Adjust width as needed */
+    aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden; /* Ensure the image stays within the rounded container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Initial shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    margin-left: 220px;/* Smooth transition */
+
+}
+
+.photo-container:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.rounded-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+    display: block; /* Remove extra space below the image */
+}
+
+/* The device with borders */
+.smartphone {
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+  }
+  
+  /* The horizontal line on the top of the device */
+  .smartphone:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+  }
+  
+  /* The circle on the bottom of the device */
+  .smartphone:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+  }
+  
+  /* The screen (or content) of the device */
+  .smartphone .content {
+    width: 360px;
+    height: 640px;
+    background: white;
+  }
+  /*    this is for playing video*/
+  /* Your existing website styles */
+
+/* Mobile Screen Styling */
+.mobile-screen {
+    width: 270px; /* Mobile width */
+    height: 555px; /* Mobile height (9:16 aspect ratio) */
+    background-color: #333;
+    border-radius: 40px; /* Rounded corners for the mobile */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto; /* Center the mobile screen */
+}
+
+.mobile-screen video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the mobile screen */
+    border-radius: 25px; /* Rounded corners for the video */
+}

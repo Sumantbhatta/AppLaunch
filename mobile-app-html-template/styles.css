@@ -109,9 +109,9 @@ h1 {
     box-shadow: 0 0 0 0 white inset;
     animation-fill-mode: forwards;
     animation-name: expand-scene-horizontaly, expand-scene-verticaly;
-    animation-duration: 2.5s, 1.5s;
+    animation-duration: 2.5s, 0.5s;
     animation-timing-function: ease-in-out, ease-in-out;
-    animation-delay: 0s, 2.5s;
+    animation-delay: 0s, 0.5s;
     animation-iteration-count: 1, 1;
     animation-direction: normal, normal;
 }
@@ -144,7 +144,7 @@ h1 {
 #scene.expand .ground {
     animation-fill-mode: forwards;
     animation-name: ground-rising;
-    animation-duration: 6s;
+    animation-duration: 3s;
     animation-timing-function: ease-out;
     animation-delay: 0s;
     animation-iteration-count: 1;
@@ -154,7 +154,7 @@ h1 {
 #scene.expand h1 {
     animation-fill-mode: forwards;
     animation-name: text-zoom, text-fade-in, text-glowing;
-    animation-duration: 5s, 1s, 1s;
+    animation-duration: 3s, 1s, 1s;
     animation-timing-function: ease-out, ease-in-out, ease-in-out;
     animation-delay: 3s, 3s, 0s;
     animation-iteration-count: 1, 1, infinite;
@@ -187,7 +187,7 @@ h1 {
         width: 140%;
         left: -20%;
         margin-left: 0;
-        background-color: rgb(32, 32, 32);
+        background-color: rgb(205, 176, 243);
         box-shadow: 0 0 0 0 white inset;
     }
 }
